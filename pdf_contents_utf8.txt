@@ -1,0 +1,314 @@
+
+--- Reading CIS311 Final Project Rubric.pdf ---
+Shopping cart Grading Rubric  
+Group:   Team:    project  :     members : 
+ 
+Functionality 1: cart ( 3.5)     
+Display products (1)  
+ 
+ Products displayed  From database  As images   
+Product details ( 0.5) 
+ 
+ 
+ Display selected 
+product details  From database  Allow 
+quantity   
+Add to cart button ( 0.5) 
+ 
+ 
+ Check quantity 
+against  stock   Add item s Reflect in cart 
+image product  
+Checkout (0.5)  
+ 
+ 
+ 
+ Display all products 
+in cart  Calculate total for 
+each product  Calculate 
+total for all 
+products  Display all 
+products in 
+cart by clicking 
+cart image  
+Allow modification in 
+cart(delete, modify, empty) 
+(0.5) 
+ 
+ Delete  modify  Empty   
+Buy product (0.5)  
+ 
+ Empty cart  Update database  
+detect quantity  
+ 
+   
+Functionality  2: admin ( 3)     
+Authenticate (1)  
+ 
+ Check against 
+database  If ok authorise else 
+give msg  
+ 
+ Security  
+(can’t display 
+the admin 
+pages such as 
+the “edit 
+products” 
+page and see 
+the name of 
+the admin 
+and the 
+logout button 
+unless admin 
+is loge in)   
+Add product (1)  
+ 
+ 
+ Page to add  Insert db  File upload 
+button  Appear in 
+products  
+Search to delete and update (1)  
+ 
+ Search for product  Modify  
+ 
+Delete  Reflect 
+modify in 
+database  
+ 
+ Reflect delete 
+in database  
+ 
+Cookie  (Past Purchases)  (1) 
+ 
+  
+Style ( 0.5) 
+  
+Javascript  ( 2) 
+Validate  and any JS  Form Validation and Help window  
+ 
+Implication of Project  (2)  
+ 
+
+--- Reading CIS311_ShoppingCartProject.pdf ---
+Imam Abdulrahman Bin Faisal University   CIS 311: Web -based Systems     
+College of Computer Science & IT          Course Project  
+  Term 2  2025-26 
+ 
+1 
+ Online Shopping System  
+Every group is required to develop an online shopping system for a shop of their own 
+choice.  Groups should be formed of 5-6 students.  
+Description  
+The application will allow customers to select products. Every  selected item will then  
+be added to the shopping cart. Customers, can  view, modify and delete the content of 
+their shopping cart any time. The shopping cart number of items and total price are 
+displayed on every page of the online shop. Customers  can c heckout at any time but 
+once th ey checkout their order can’t be modified and their order details will be stored 
+in a database.  The shopping cart content will then be cleared.  
+The application will also enable  authenticated administrators to manage their shop 
+products online (add, modify  and delete  products).  
+ 
+Functional requirements  
+Task1: Database design  
+The web shop products are stored in a database. Depending on your choice of shop 
+you need to design a database with appropriate  tables and fields. The  following 
+fields are mandatory. However, you will defiantly need more tables and fields (color, 
+size,). 
+Id: a unique identifier  for every product.  
+Name: name of the product.  
+Picture: picture of the product.  (Saved as a file name in the database)  
+Stock: number of available items.  
+Price: unit price of the product.  
+……. 
+…….  
+Database must be normalized. Tables’ primary keys and foreign keys must be 
+specified in the ER diagram.  
+ 
+Imam Abdulrahman Bin Faisal University   CIS 311: Web -based Systems     
+College of Computer Science & IT          Course Project  
+  Term 2  2025-26 
+ 
+2 
+ Task  2: Web Design  
+The web application will include several pages.  Groups are free to choose the 
+content,  number and naming of their pages. However, their project should include 
+all the required functionality.  
+• Pages must be designed using html and css.  
+• Pages should have similar appearance.  
+• Pages should not exceed 10  
+• Images must be stored in images directory under the web application.  
+• inappropriate  or copyrighted images must be avoided.  
+As an example,  the web application can include the following pages  
+1. Home or main page that can also include the products.  
+2. Product detail page.  
+3. Checkout page  
+4. Administrator authentication page  
+5. Managing products page.  
+6. Contact us page.  
+ 
+Task  3: Display Products.  
+Products details must be retrieved from the database. All the shop products must be 
+displayed by an image of each product on the products page.  The customer can 
+select any product by clicking on it.  
+ 
+Task  4: Display Product Details  
+Display selected product details on the product details page. Allow the customer to 
+input the required quantity in an input box and add the items to the shopping cart by 
+clicking  add to shopping cart  button.  
+Task  5: Add to C art 
+The customer entered quantity will be checked against the product available stock. If 
+the required quantity is available,  the customer order will be added to  the shopping 
+cart. Otherwise , appropriate  message indicating unavailable required quantity will be 
+displayed. Total for each item is also displayed ( unit price * quantity). PHP sessions 
+should  be used to achieve this functionality.  
+ 
+Imam Abdulrahman Bin Faisal University   CIS 311: Web -based Systems     
+College of Computer Science & IT          Course Project  
+  Term 2  2025-26 
+ 
+3 
+ Task  6: Checkout  
+Customer can check out by clicking checkout  button in the product detail page or 
+checkout ( can be a shopping cart image) available on every page of the web 
+application.  
+Customer orders will then be displayed in the checkout page. The  customer will be 
+allowed to delete, modify quantity of any order or delete all orders ( empty shopping 
+cart).  
+The customer can also buy all products in the shopping cart.  
+Task  7: Buy 
+The customer can click on the buy button on the checkout page . The quantity field of 
+every product will be updated in the database. The shopping cart will be emptied . 
+Task  8: Authenticate Managers  
+Managers  will be  authenticated  in the Administrator authentication page. Managers  
+will enter their id and password in input boxes their input will be compared with  the 
+mangers accounts in the database. If a match is found they will be granted authority 
+otherwise, appropriate message will be displayed.  
+Task  9: Add New Product  
+Authenticated  managers  can add new products . For every product,  relevant fields 
+must be entered ( differ for each group ). The database will be updated by clicking the  
+add button.  
+Task  10: Search  for a product to  modify  or delete . 
+Authenticated managers  can search for a product to modify or delete. The database 
+will be updated by clicking the  modify or delete button.  
+ Task11: D isplay address and location map  
+The address of the shop and a Google  location map will be displayed in the contact 
+us page.  
+Google map is a web service that you can add to your web application for free by 
+creating a Google  account.   
+  
+Imam Abdulrahman Bin Faisal University   CIS 311: Web -based Systems     
+College of Computer Science & IT          Course Project  
+  Term 2  2025-26 
+ 
+4 
+ Task12: Past purchases  
+Returning customers will see their past purchases on the main web page. Cookies 
+should be  used to achieve this functionality.  
+Task1 3: Forms Validation  
+Every form must be validated using JavaScript.  
+Task  14: Help window  
+Include a pop up help window in the product details page suitable to your project.  
+Task  15: Accessibility  
+Make sure your web page is accessible by disabled users.   
+Task1 6: Efficiency  
+Make sure your code is efficient (use of functions, avoid reputation, use of include…).  
+Task 17: Implication of Project  
+You have to add implications of the project on business organization which will 
+include the following points:  
+1. What are the issues faced by that organization which are going to be 
+solved through your website?  
+2. What are the technological features that you have included in the website 
+to solve these problems?  
+3. List down additional problems/challenges that may result due to your 
+system.  
+4. How the tools used in project helped you to design an appropriate 
+system?  
+ 
+ 
+ 
+ 
+Imam Abdulrahman Bin Faisal University   CIS 311: Web -based Systems     
+College of Computer Science & IT          Course Project  
+  Term 2  2025-26 
+ 
+5 
+ Submission  instructions  
+Milestones  
+Milestone  Due date  
+Proposal + group formation +assigning leader and tasks  [ 2 Documents 
+to be Submitted, Resume + Contract]  Sat, 21 Feb 2026  
+Web interface + tables filled with data + hardcopy of tables +ER design  Sat, 11 Apr 2026  
+60% implementation of project  Sat, 2 May 2026  
+Final complete project + presentation (15 -20 mints) + report (pdf ) Sun,  17 May 20 26  
+ 
+Report  
+The report should include the following  
+1. Report cover including project title, team members,  major (CS, CIS),  section, 
+group # (according to blackboard)  and date  
+2. How work was divided between members.  
+3. Database design + tables + ER design  
+4. Web application Interface.  
+5. Fulfilled requirements  (specify tasks that work properly, tasks that you tried 
+but didn’t succeed and tasks that you haven’t’ done)  
+6. Testing cases (that covers all the assigned tasks) + print screens  
+7. Project Implications  
+Important:  Every group is expected to submit their project (web application) + 
+soft copy of their report (pdf file) using the blackboard.  
+Notes  
+1. More tasks might be assigned  or changed  through the semester.  
+2. Code must be commented.  
+3. The author of every  task must be documented (as a comment)   
+4. Late projects will result  in mark deduction.   
+5. Make sure the code is your own work. Cheating can result in a zero grade for 
+the whole project.  
+6. Every team is expected to divide the work evenly between members (team 
+leader responsibility). Group members will receive the same mark. In case 
+some members output is not as expected by their group; their work will be 
+graded based on their covered tasks. Hence, they will not receive the same 
+group mark.   
+Imam Abdulrahman Bin Faisal University   CIS 311: Web -based Systems     
+College of Computer Science & IT          Course Project  
+  Term 2  2025-26 
+ 
+6 
+ 7.  Students will divide themselves in teams (mentioning their skills, roles and 
+part in the teamwork). (template attached ) 
+8. Team will sign a contract against the provided information to achieve the 
+teamwork. (template provided). (submit as a proposal with the Resume ) 
+ 
+ 
+
+--- Reading Milestone 2 Rubric - Tagged.pdf ---
+Imam Abdulrahman Al Faisal University CIS 311: Web-based Systems
+College of Computer Science & IT        Term 2 2025-26
+CIS 423: Web-based SystemsCIS 311: Web-based Systems Project
+Milestone#2 Feedback - Group (    ) Team #  – Topic:  
+Team Grade:         / 7
+Overall comments on your MS#2 submission:
+Database (1 Mark)
+Table product Important fields
+Table admin Important fields
+Primary keys
+Image as file name (1/8)
+Interface Functionality (3.5 Marks) every  
+2 missing points by 1/8
+List products with images, cart image
+Product  detail  include  price,  quantity  and  
+help
+Check out delete, modify, delete all, buy
+Admin log in
+Admin add product include image upload
+Admin modify product include image upload
+Admin delete product
+Admin search
+Admin logout
+Contact us map + location
+Logical flow (0.5 Mark)
+Click on product take to product detail, then  
+checkout.  click  on  cart  take  to  checkout.  
+contact us (1/4)
+Click admin, click login, click add, modify,  
+delete (1/4)
+Teamwork (2 Marks)
+1

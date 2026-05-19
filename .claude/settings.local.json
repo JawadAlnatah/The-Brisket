@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\jawad\\\\Desktop\\\\Coding\\\\my websites\\\\The brisket\" -Recurse -Force)",
+      "Bash(Select-Object FullName, PSIsContainer)",
+      "Bash(Sort-Object FullName)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(grep -r \"TODO\\\\|FIXME\\\\|XXX\" \"c:\\\\Users\\\\jawad\\\\Desktop\\\\Coding\\\\my websites\\\\The brisket\" --include=\"*.tsx\" --include=\"*.ts\" --include=\"*.jsx\" --include=\"*.js\" -not -path \"*/node_modules/*\" -not -path \"*/.next/*\")"
+    ]
+  }
+}
