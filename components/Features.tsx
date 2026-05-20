@@ -63,15 +63,6 @@ export default function Features() {
 
             {/* ── Footer line ── */}
             <div className="py-8 px-6 text-center border-t border-gray-100 flex flex-col items-center gap-4">
-                <a
-                    href="https://github.com/JawadAlnatah"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block text-gray-400 hover:text-black text-sm font-mono transition-colors border-b border-transparent hover:border-black pb-0.5"
-                >
-                    [ Developed by Jawad Alnatah ]
-                </a>
-                
                 <Link 
                     href="/implications"
                     className="inline-block text-orange-500 hover:text-orange-600 text-xs font-bold uppercase tracking-widest transition-colors"
